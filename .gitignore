@@ -1,0 +1,9 @@
+# linting
+.clj-kondo/*
+!.clj-kondo/config.edn
+!.clj-kondo/config-ci.edn
+lsp
+.lsp
+
+# other
+.cpcache

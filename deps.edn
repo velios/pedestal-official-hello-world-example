@@ -1,0 +1,9 @@
+{:paths ["src"]
+ :deps  {io.pedestal/pedestal.jetty {:mvn/version "0.7.0"}
+         org.slf4j/slf4j-simple     {:mvn/version "2.0.10"}}
+ :aliases {:dev
+           {:classpath-overrides {org.clojure/clojure nil}
+            :extra-deps {com.github.flow-storm/clojure {:mvn/version "1.11.3-2"}
+                         com.github.flow-storm/flow-storm-dbg {:mvn/version "3.17.0"}}
+            :jvm-opts ["-Dflowstorm.startRecording=false"
+                       "-Dclojure.storm.instrumentEnable=true"]}}}
